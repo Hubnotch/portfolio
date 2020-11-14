@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid #737373;
 }
 
 html {
@@ -26,6 +25,11 @@ li {
 
 a {
     color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #738;
 }
 
 .container {
@@ -33,6 +37,7 @@ a {
     margin: 0 auto;
     display: grid;
     grid-template: calc(100vh / 5)/1fr;
+    overflow-x: none;
 }
 
 .closebtn ,
@@ -60,18 +65,26 @@ img {
 }
 
 .container-image_image {
+    margin-top: -15px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
 .container-image {
-    margin-bottom: 3rem;
+   
+}
+
+.container-image h1 {
+    margin: 1.5rem 0 1rem;
 }
 
 .introduction-text {
     text-align: center;
     padding: 2rem 1rem;
+    max-width: 620px;
+    word-wrap: break-word;
+    margin: 0 auto;
 }
 .introduction-text p {
     font-size: 1.5rem;
@@ -79,11 +92,15 @@ img {
 }
 
 .contact {
-    margin: 2rem 0 5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 1rem;
+}
+
+.contact section {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
 }
 
 .contact a {
@@ -91,6 +108,10 @@ margin: 0 1rem 0;
 font-size: 1.5rem;
 }
 
-.container footer {
-    align-content: end;
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 .5rem;
+    font-size: 1.4rem;
+    padding: 2rem 0 .5rem;
 }
