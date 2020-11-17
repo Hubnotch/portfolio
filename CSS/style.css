@@ -14,6 +14,9 @@ html {
 body {
     height: 100%;
     text-align: center;
+    color: #c4c3ca;
+    overflow: hidden;
+    background-color: #1f2029;
 }
 
 ul {
@@ -24,7 +27,8 @@ li {
 }
 
 a {
-    color: #444;
+    color: #c4c3ca;
+    /* background-color: #1f2029; */
     text-decoration: none;
 }
 
@@ -40,13 +44,13 @@ a:hover {
     overflow-x: none;
 }
 
-.closebtn ,
-.menu-toggle {
-    display: none;
-}
-
 .nav {
-    margin-top: 1.5rem;
+    position: relative;
+    width: 100%;
+    height: 13vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-list {
@@ -55,10 +59,12 @@ a:hover {
     justify-content: flex-end;
     font-size: 1.2rem;
 }
-.nav-list li {
-    padding: 0 1rem;
+.nav-list li a{
+    padding: 0 1rem 1rem;
     line-height: 1.5rem;
+    margin: 1rem;
 }
+
 
 img {
     width: 100%;
@@ -71,12 +77,9 @@ img {
     border-radius: 50%;
 }
 
-.container-image {
-   
-}
-
 .container-image h1 {
     margin: 1.5rem 0 1rem;
+    font-size: 4rem;
 }
 
 .introduction-text {
@@ -101,6 +104,7 @@ img {
 .contact section {
     padding: 1rem 2rem;
     font-size: 1.4rem;
+    margin-top: -1rem;
 }
 
 .contact a {
@@ -114,4 +118,93 @@ footer {
     margin: 2rem 0 .5rem;
     font-size: 1.4rem;
     padding: 2rem 0 .5rem;
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+.fa-github:hover {
+    color: #333;
+}
+
+.fa-envelope:hover {
+    color: #b92d28;
+}
+
+@media (max-width:660px) {
+   
+/* Menu toggle icon*/
+.menu-icon {
+    cursor: pointer;
+    position: absolute;
+}  
+
+
+.menu-icon_bar1,
+.menu-icon_bar2,
+.menu-icon_bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #c4c3ca;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.change .menu-icon_bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menu-icon_bar2 {
+    opacity: 0;
+}
+
+.change .menu-icon_bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Menu toggle icon */
+
+/* nav-list styles*/
+.nav-list{
+position: absolute;
+right: 42px;
+top: 2.7vh;
+background-color: #0f0f14;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: center; */
+height: 35vh;
+width: 150px;
+transform: translateX(150%);
+transition: transform 0.5s ease-out;
+}
+/* nav-list styles*/
+
+.nav-list li {
+margin: 0rem;
+padding: 1.5rem;
+font-size: 1.5rem;
+align-items: right;
+}
+
+.nav-active {
+transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+from{
+    opacity: 0;
+    transform: translateX(50%);
+}
+to{
+    opacity: 1;
+    transform: translateX(0%);
+}
+}
+
 }

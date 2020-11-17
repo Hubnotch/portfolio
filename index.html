@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./images/IMG_20190429_084554.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <title>Ugwuanyi Ekene</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <div class="container">
         <header class="nav">
-
-            <ul class="nav-list">
-                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resune</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sideNav" class="nav-list">
+              <li><a class="nav-link" href="#">Home</a></li>
+              <li><a class="nav-link" href="https://www.github.com/Hubnotch" target="_blank">Portfolio</a></li>
+              <li><a class="nav-link" href="#" >Resume</a></li>
+              <li><a class="nav-link" href="mailto:love2ekene@gmail.com" target="_blank">Contact</a></li>
             </ul>
-            <span class="menu-toggle" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        </header>
+            
+            <div id="menu-icon" class="menu-icon">
+              <div class="menu-icon_bar1"></div>
+              <div class="menu-icon_bar2"></div>
+              <div class="menu-icon_bar3"></div>
+            </div>
+           
+          </header>
+
         <div class="container-image">
             <img class="container-image_image" src="./images/IMG_20190429_084554.jpg" alt="my portfolio">
             <h1>Frontend Engineer</h1>
@@ -33,10 +40,10 @@
         <div class="contact">
             <section>Reach me on: </section>
             <div>
-            <a href="#">twiter</a>
-            <a href="#">linkedIn</a>
-            <a href="#">github</a>
-            <a href="mailto:love2ekene@gmail.com">email</a>
+            <a href="https://twitter.com/hubnotch" target="_blank"><i class="fab fa-twitter fa-lg fa-2x"> </i></a>
+            <a href="https://www.linkedin.com/in/ekene-ugwuanyi/" target="_blank"><i class="fab fa-linkedin-in fa-lg fa-2x"> </i></a>
+            <a class="nav-link" href="https://www.github.com/Hubnotch" target="_blank">  <i class="fab fa-github fa-lg fa-2x"> </i><a/>
+            <a href="mailto:love2ekene@gmail.com" target="_blank"><i class="far fa-envelope fa-lg fa-2x"> </i></a>
             </div>
         </div>
         <footer>
